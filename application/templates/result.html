@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}
+Prediction Result
+{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h1>Prediction Result</h1>
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="{{ image_url }}" alt="Uploaded Image">
+    <div class="card-body">
+      <h5 class="card-title">Prediction: {{ prediction[1] }}</h5>
+      <p class="card-text">Confidence: {{ prediction[2] * 100 }}%</p>
+    </div>
+  </div>
+</div>
+{% endblock %}
