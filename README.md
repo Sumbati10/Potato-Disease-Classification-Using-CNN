@@ -1,7 +1,10 @@
 # Project Goal
-My  goal is to bu-ld the model that supports the "behind the scene" of the mobile application, which uses **deep learning** and **conbolutional neural network**.
+My  goal is to bu-ld the model that supports the "behind the scene" of the mobile application, which uses **deep learning** and **convolutional neural network**.
 
-![early_and_late](https://user-images.githubusercontent.com/105242871/188295263-761359b7-497f-4563-8df5-a2360e2c8bf0.jpeg)
+
+<img width="530" alt="image" src="https://github.com/Sumbati10/Potato-Disease-Classification-Using-CNN/assets/105505214/56231b7a-b3da-41f5-acf6-37951195e9a1">
+
+
 
 ## Process
 #### :one:   Data Acquisition
@@ -52,9 +55,13 @@ My  goal is to bu-ld the model that supports the "behind the scene" of the mobil
 ## Conclusion
 The neurol network model has an accuracy of 99% on test dataset, and it's expected to perform with the equivalent accuracy level on future onseen data.
 
+<img width="401" alt="image" src="https://github.com/Sumbati10/Potato-Disease-Classification-Using-CNN/assets/105505214/56eeacbb-2417-45cd-a946-a0471c84d8b8">
+
+
 
 # Plant Disease Classifier
 A web application to predict the disease in an infected potato plant using it's leaf and Convolutional Neural Networks.<br>
+
 
 # Run 🎯
 ### 1. Download or clone the repository
@@ -66,7 +73,7 @@ A web application to predict the disease in an infected potato plant using it's 
 # Tools✅
 **Python 3.7** <br>
 **Flask**<br>
-**Tensorflow 2.6**<br>
+**Tensorflow 2.16.1**<br>
 **Numpy**<br>
 **Matplotlib**<br>
 **HTML**<br>
