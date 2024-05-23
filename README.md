@@ -1,3 +1,58 @@
+# Project Goal
+My  goal is to bu-ld the model that supports the "behind the scene" of the mobile application, which uses **deep learning** and **conbolutional neural network**.
+
+![early_and_late](https://user-images.githubusercontent.com/105242871/188295263-761359b7-497f-4563-8df5-a2360e2c8bf0.jpeg)
+
+## Process
+#### :one:   Data Acquisition
+### :two:   Data Preparation
+
+- **tf dataset**
+
+- **Resize & Scale**
+
+- **Data augmentation**
+
+<details>
+<summary> Data Splitting </summary>
+
+- Create function `get_dataset_partitions_tf()` to split data into **train, validate, test**
+
+ Test prepare function
+
+- Check the size of each dataset
+     ```sh
+     len(train), len(validate), len(test)
+     ```
+- Call the function, and cache e the 3 data samples
+     ```sh
+    train = train.cache().shuffle(1000).prefetch(buffer_size = tf.data.AUTOTUNE)
+    validate = validate.cache().shuffle(1000).prefetch(buffer_size = tf.data.AUTOTUNE)
+    test = test.cache().shuffle(1000).prefetch(buffer_size = tf.data.AUTOTUNE)
+     ```
+</details>
+
+#### :three:    Modeling
+- Define neural network architecture
+
+- Build model on training dataset and evaluate on train and validate
+
+- Use optimizer to compile
+
+- Fit model on test dataset on evaluate model based on accuracy
+
+- Plot accuracy and loss function of train and validate datasets from all 50 epochs.
+
+- Make prediction on test dataset and save model
+
+- Ajdust neural network architecture and optimizer, using steps above to generate and save new mdoel
+
+- Deploy the top performing model
+
+## Conclusion
+The neurol network model has an accuracy of 99% on test dataset, and it's expected to perform with the equivalent accuracy level on future onseen data.
+
+
 # Plant Disease Classifier
 A web application to predict the disease in an infected potato plant using it's leaf and Convolutional Neural Networks.<br>
 
@@ -21,7 +76,9 @@ A web application to predict the disease in an infected potato plant using it's 
 
 # Tour!🎯
 #### Home page
-C:\Users\Administrator\Downloads\POTATO_DISEASE\images\Screenshot 2024-05-22 223426.png
+
+<img width="958" alt="Screenshot 2024-05-22 223426" src="https://github.com/Sumbati10/Potato-Disease-Classification-Using-CNN/assets/105505214/70e84b94-3f98-4fad-a1d3-ff80aec3af18">
+
 
 
 #### About page
@@ -30,4 +87,6 @@ C:\Users\Administrator\Downloads\POTATO_DISEASE\images\Screenshot 2024-05-22 223
 
 #### Result page
 
-C:\Users\Administrator\Downloads\POTATO_DISEASE\images\Screenshot 2024-05-22 222449.png
+<img width="545" alt="Screenshot 2024-05-22 222449" src="https://github.com/Sumbati10/Potato-Disease-Classification-Using-CNN/assets/105505214/3ec2e1b3-e905-4559-9a3a-a07877ae14b4">
+
+
