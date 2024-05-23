@@ -59,7 +59,7 @@ The neurol network model has an accuracy of 99% on test dataset, and it's expect
 
 
 
-# Plant Disease Classifier
+# Potato Disease Classifier
 A web application to predict the disease in an infected potato plant using it's leaf and Convolutional Neural Networks.<br>
 
 
